@@ -7,7 +7,12 @@ This library allows developers to easily integrate search menuItem in an Android
 Sample
 ------
 
-A sample application is available on Google Play - [CollapsibleSearchMenu](https://play.google.com/store/apps/details?id=org.pierrre.webimage.sample).
+A sample application is available on Google Play:
+
+<a href="http://play.google.com/store/apps/details?id=com.devspark.collapsiblesearchmenu.sample">
+  <img alt="Get it on Google Play"
+       src="http://www.android.com/images/brand/get_it_on_play_logo_small.png" />
+</a>
 
 ![Example Image][1]
 
