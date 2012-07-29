@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Android-CollapsibleSearchMenu by johnkil</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Android-CollapsibleSearchMenu</h1>
+        <h2>Implementation of the SearchView is compatible with Android below 3.0. This library allows developers to easily integrate search menuItem in an Android application.</h2>
+        <a href="https://github.com/johnkil/Android-CollapsibleSearchMenu" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>Android CollapsibleSearchMenu Library</h1>
+
+<p>Implementation of the SearchView is compatible with Android below 3.0. 
+This library allows developers to easily integrate search menuItem in an Android application.</p>
+
+<h2>Sample</h2>
+
+<p>A sample application is available on Google Play:</p>
+
+<p><a href="http://play.google.com/store/apps/details?id=com.devspark.collapsiblesearchmenu.sample">
+  <img alt="Get it on Google Play" src="http://www.android.com/images/brand/get_it_on_play_logo_small.png"></a></p>
+
+<p><img src="http://i50.tinypic.com/2h72yqo.jpg" alt="Example Image"></p>
+
+<p>The source code is available in this repository.</p>
+
+<h2>Compatibility</h2>
+
+<p>This library is compatible from API 7 (Android 2.1).</p>
+
+<h2>Installation</h2>
+
+<p>The library project requires:</p>
+
+<ul>
+<li><a href="https://github.com/JakeWharton/ActionBarSherlock">ActionBarSherlock</a></li>
+</ul><h2>Usage</h2>
+
+<p>Add the SearchMenuItem to the menu.</p>
+
+<p>Code for Activity:</p>
+
+<div class="highlight"><pre><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="n">Menu</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">searchMenuItem</span> <span class="o">=</span> <span class="n">CollapsibleMenuUtils</span><span class="o">.</span><span class="na">addSearchMenuItem</span><span class="o">(</span><span class="n">menu</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="n">textWatcher</span><span class="o">);</span>
+    <span class="c1">// other code</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>Code for Fragment:</p>
+
+<div class="highlight"><pre><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="n">Menu</span> <span class="n">menu</span><span class="o">,</span> <span class="n">MenuInflater</span> <span class="n">inflater</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">searchMenuItem</span> <span class="o">=</span> <span class="n">CollapsibleMenuUtils</span><span class="o">.</span><span class="na">addSearchMenuItem</span><span class="o">(</span><span class="n">menu</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="n">textWatcher</span><span class="o">);</span>
+    <span class="c1">// other code</span>
+<span class="o">}</span>
+</pre></div>
+
+<h2>Developed By</h2>
+
+<ul>
+<li>Evgeny Shishkin - <a href="mailto:johnkil78@gmail.com">johnkil78@gmail.com</a>
+</li>
+</ul><h2>License</h2>
+
+<pre><code>Copyright 2012 Evgeny Shishkin
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/johnkil/Android-CollapsibleSearchMenu/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/johnkil/Android-CollapsibleSearchMenu/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/johnkil/Android-CollapsibleSearchMenu"></a> is maintained by <a href="https://github.com/johnkil">johnkil</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
