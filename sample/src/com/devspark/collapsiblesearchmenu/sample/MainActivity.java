@@ -33,6 +33,8 @@ public class MainActivity extends SherlockListActivity {
     	// ATTENTION: need to do to closure of the keyboard when you click on home
     	if (searchMenuItem.isActionViewExpanded()) {
     		searchMenuItem.collapseActionView();
+    		// reset filter
+		mArrayAdapter.getFilter().filter(null);
     	}
     }
 
