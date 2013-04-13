@@ -47,8 +47,8 @@ public class CollapsibleMenuUtils {
 			
 			@Override
 			public boolean onMenuItemActionCollapse(MenuItem item) {
-				editText.removeTextChangedListener(textWatcher);
 				editText.setText(null);
+				editText.removeTextChangedListener(textWatcher);
 				// editText.clearFocus();
 				hideKeyboard(editText);
 				return true;
