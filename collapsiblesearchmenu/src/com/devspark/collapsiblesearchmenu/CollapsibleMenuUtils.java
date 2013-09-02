@@ -72,10 +72,12 @@ public class CollapsibleMenuUtils {
             }
         };
         final TextView.OnEditorActionListener onEditorActionListener = new
+
                 TextView.OnEditorActionListener() {
                     @Override
                     public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                        if (i == EditorInfo.IME_ACTION_SEARCH) {
+                        if (i == EditorInfo.IME_ACTION_SEARCH ||
+                                keyEvent.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
                             onQueryChangeListener.onQueryTextSubmit(textView.getText().toString());
                             return true;
                         }
