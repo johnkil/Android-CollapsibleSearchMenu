@@ -29,7 +29,7 @@ import com.devspark.collapsiblesearchmenu.CollapsibleMenuUtils;
  */
 public class MainActivity extends SherlockListActivity {
 
-    String[] items = new String[]{
+    private static final String[] ITEMS = new String[]{
             "China",
             "India",
             "United States",
@@ -66,7 +66,7 @@ public class MainActivity extends SherlockListActivity {
             "Algeria",
             "Canada"
     };
-    private MenuItem searchMenuItem;
+    private MenuItem mSearchMenuItem;
     private ArrayAdapter<String> mArrayAdapter;
     private CollapsibleMenuUtils.OnQueryTextListener mOnQueryTextListener = new CollapsibleMenuUtils.OnQueryTextListener() {
 
@@ -83,7 +83,7 @@ public class MainActivity extends SherlockListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        mArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ITEMS);
         setListAdapter(mArrayAdapter);
     }
 
@@ -91,8 +91,8 @@ public class MainActivity extends SherlockListActivity {
     protected void onPause() {
         super.onPause();
         // ATTENTION: need to do to closure of the keyboard when you click on home
-        if (searchMenuItem.isActionViewExpanded()) {
-            searchMenuItem.collapseActionView();
+        if (mSearchMenuItem.isActionViewExpanded()) {
+            mSearchMenuItem.collapseActionView();
             // reset filter
             mArrayAdapter.getFilter().filter(null);
         }
@@ -100,7 +100,7 @@ public class MainActivity extends SherlockListActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        searchMenuItem = CollapsibleMenuUtils.addSearchMenuItem(menu, true, mOnQueryTextListener);
+        mSearchMenuItem = CollapsibleMenuUtils.addSearchMenuItem(menu, true, mOnQueryTextListener);
         return true;
     }
 
